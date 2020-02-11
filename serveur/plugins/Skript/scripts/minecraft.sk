@@ -4,4 +4,4 @@ on connect:
 	broadcast "&2&l%player% &b&la rejoint la partie !"
 	
 on death of player: 
-	set death message to "&1&l%victim% &4&la été tué par &1&l%attacker% !"
+	set death message to "&c&l%victim% &9&la été tué par &c&l%attacker% !"
