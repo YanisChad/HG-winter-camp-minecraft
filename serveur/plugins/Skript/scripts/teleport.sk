@@ -3,11 +3,15 @@ on command "tpps":
   loop players:
     if {loopnbr} is 1:
       teleport loop-player to location(580, 70, 1661, world("world"), 0, 180)
+      set {loopnbr} to 2
     if {loopnbr} is 2:
-      teleport loop-player to location(538, 70, 1661, world("world"), 0, 180)
+      teleport loop-player to location(538, 70, 1661, world("world"), 0, 180
+      set {loopnbr} to 3
     if {loopnbr} is 3:
-      teleport loop-player to location(559, 70, 1682, world("world"), 0, 180)
+      teleport loop-player to location(559, 70, 1682, world("world"), 0, 180
+      set {loopnbr} to 4
     if {loopnbr} is 4:
-      teleport loop-player to location(559, 70, 1640, world("world"), 0, 180)
+      teleport loop-player to location(559, 70, 1640, world("world"), 0, 180
+      set {loopnbr} to 5
     
     
