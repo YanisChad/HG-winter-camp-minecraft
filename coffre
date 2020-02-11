@@ -1,0 +1,76 @@
+Tuto: #Que pour toi :p
+ 
+Au debut, tu set une variable sur ton coffre !
+Grâce a se code !
+
+command /setChest <text>:
+   permission: Set.Chest
+   trigger:
+       set {chest.%Arg-1%} to location of player
+       Send "&2Tu as Mis Le Chest Numéro %arg-1%"
+
+
+ 
+Apres tu te mes a l'endroit ou tu veux ton Chest Et tu fais /SetChest 1 Par exemple !
+ 
+Pour un Coffre Sans Rien au debut tu Ajoutes
+
+chance of 25%:
+   clear all entities
+set block at {chest.1} to chest
+
+
+ 
+Puis entre les Lignes 
+clear all entities |ICI| set block at {chest.1} to chest
+
+
+ 
+En gros pour ajouter un objet ^^
+
+add OBJET  to inventory of block at {chest.1}
+
+
+ 
+Tu rajoutes une ligne Pour ajouter des objets exemples
+
+        chance of 25%:
+           clear all entities
+           add diamond helmet of protection 4 to inventory of block at {chest.1}
+           add bow of flame 1 to inventory of block at {chest.1}
+       set block at {chest.1} to chest
+
+
+ 
+ 
+Le skript Du coffre :
+
+command /Chest:
+   trigger:
+       chance of 25%:
+           clear all entities
+           add diamond helmet of protection 4 to inventory of block at {chest.1}
+           add bow of flame 1 to inventory of block at {chest.1}
+       set block at {chest.1} to chest
+       add bow of flame 1 to inventory of block at {chest.1}
+
+
+ 
+Et le Skript en entier :
+
+command /Chest:
+   trigger:
+       chance of 25%:
+           clear all entities
+           add diamond helmet of protection 4 to inventory of block at {chest.1}
+           add bow of flame 1 to inventory of block at {chest.1}
+       set block at {chest.1} to chest
+       add bow of flame 1 to inventory of block at {chest.1}
+
+
+
+command /setChest <text>:
+   permission: Set.Chest
+   trigger:
+       set {chest.%Arg-1%} to location of player
+       Send "&2Tu as Mis Le Chest Numéro %arg-1%"
