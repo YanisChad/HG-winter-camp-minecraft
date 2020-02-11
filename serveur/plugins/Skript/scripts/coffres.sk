@@ -1,41 +1,16 @@
-command /load:
-   delete {random.item.list::*}
-   add 2 diamond to {random.item.list::*}
-   add 2 iron ingot to {random.item.list::*}
-   add 2 leather to {random.item.list::*}
-   add 2 tnt to {random.item.list::*}
-   add 1 flint and steel to {random.item.list::*}
-   add 1 golden apple to {random.item.list::*}
-   add 4 cooked beef to {random.item.list::*}
-   add 32 stone to {random.item.list::*}
-   add 32 cobblestone to {random.item.list::*}
-   add 4 cooked porkchop to {random.item.list::*}
-   add 32 planks to {random.item.list::*}
-   add 2 apple to {random.item.list::*}
-   add 1 stone sword to {random.item.list::*}
-   add 1 stone pickaxe to {random.item.list::*}
-   add 1 stone axe to {random.item.list::*}
-   add 1 leather leggings to {random.item.list::*}
-   add 1 leather boots to {random.item.list::*}
-   add 1 leather chestplate to {random.item.list::*}
-   add 1 leather helmet to {random.item.list::*}
-   add 4 snowball to {random.item.list::*}
-   add 1 diamond boots to {random.item.list::*}
-   add 1 diamond leggings to {random.item.list::*}
-   add 1 diamond helmet to {random.item.list::*}
-   add 1 diamond chestplate to {random.item.list::*}
-   wait 1 tick
-   execute console command "/chest"
+command /Chest:
+   trigger:
+       chance of 25%:
+           clear all entities
+           add diamond helmet of protection 4 to inventory of block at {chest.1}
+           add bow of flame 1 to inventory of block at {chest.1}
+       set block at {chest.1} to chest
+       add bow of flame 1 to inventory of block at {chest.1}
 
-command /chest:
-   if executor is console:
-      loop blocks in radius 100000 around {chestloc}:
-         if loop-block is a chest:
-            clear loop-block's inventory
-            set {_item} to a random number between 3 and 6
-            loop {_item} times:
-            set {_randomitem} to random element out of {random.item.list::*}
-            add {_randomitem} to the loop-block's inventory
 
-command /setloc:
-   set {chestloc} to player's position
+
+command /setChest <text>:
+   permission: Set.Chest
+   trigger:
+       set {chest.%Arg-1%} to location of player
+       Send "&2Tu as Mis Le Chest Numéro %arg-1%"
