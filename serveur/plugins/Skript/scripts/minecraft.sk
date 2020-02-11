@@ -8,6 +8,8 @@ on quit:
 	
 on death of player: 
 	set death message to "&c&l%victim% &9&la été tué par &c&l%attacker% !"
+    loop all players:
+        play sound "WITHER_SPAWN" to loop-player with volume 1 and pitch 0.1
 	
 on command "gamestart":
 	wait 5 seconds
@@ -29,7 +31,7 @@ on command "gamestart":
 	loop players:
 		send title "&b&lPartez !" to loop-player
 	broadcast "&a&lQue le meilleur gagne !"
-	execute console command "/worldborder set 300 11"
+	execute console command "/worldborder set 300 12"
 
 on command "gamestop":
 	loop players:
