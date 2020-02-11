@@ -28,16 +28,14 @@ command /load:
    execute console command "/chest"
 
 command /chest:
-   trigger:
-       if executor is console:
-           loop blocks in radius 100000 around {chestloc}:
-               if loop-block is a chest:
-                   clear loop-block's inventory
-                   set {_item} to a random number between 3 and 6
-                   loop {_item} times:
-                       set {_randomitem} to random element out of {random.item.list::*}
-                       add {_randomitem} to the loop-block's inventory
+   if executor is console:
+      loop blocks in radius 100000 around {chestloc}:
+         if loop-block is a chest:
+            clear loop-block's inventory
+            set {_item} to a random number between 3 and 6
+            loop {_item} times:
+            set {_randomitem} to random element out of {random.item.list::*}
+            add {_randomitem} to the loop-block's inventory
 
 command /setloc:
-   trigger:
-       set {chestloc} to player's position
+   set {chestloc} to player's position
