@@ -1,5 +1,5 @@
 on command "tpps":
-  set {loopnbr} = 1
+  set {loopnbr} to 1
   loop players:
     if {loopnbr} is 1:
       teleport loop-player to location(580, 70, 1661, world("world"), 0, 180)
