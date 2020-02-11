@@ -4,16 +4,16 @@ on connect:
 	broadcast "&2&l%player% &b&la rejoint la partie !"
 	
 on leave:
-	wait 1 second
-	broadcast "&4%player% a quitté la partie !
+	broadcast "&2%lplayer% &b&la quitté la partie !"
 	
 on death of player: 
 	set death message to "&c&l%victim% &9&la été tué par &c&l%attacker% !"
 	
 on command "gamestart":
 	broadcast "Que le meilleur gagne !"
+	execute console command "/worldborder set 300 10"
 
 on command "gamestop":
-	send title "&c&lPartie annulée !"
+	broadcast title "&c&lPartie annulée !"
 	execute console command "/gamemode spectator @a"
 	execute console command "/worldborder set 50 5"
