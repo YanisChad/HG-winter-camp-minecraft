@@ -1,4 +1,4 @@
-command /Chest:
+command /chest:
    trigger:
        chance of 25%:
            clear all entities
@@ -6,11 +6,3 @@ command /Chest:
            add bow of flame 1 to inventory of block at {chest.1}
        set block at {chest.1} to chest
        add bow of flame 1 to inventory of block at {chest.1}
-
-
-
-command /setChest <text>:
-   permission: Set.Chest
-   trigger:
-       set {chest.%Arg-1%} to location of player
-       Send "&2Tu as Mis Le Chest Numéro %arg-1%"
