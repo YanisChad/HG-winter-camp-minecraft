@@ -1,0 +1,20 @@
+[
+  {
+    "uuid": "b2583827-9eeb-3dd9-8189-e08f4caf85d4",
+    "name": "Yanis",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "00561882-30e3-3bea-8c71-5b4ec16560a2",
+    "name": "saukia",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "c5f01ead-7b59-3ef0-8382-3708a0a20d7c",
+    "name": "MaitreRouge",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]

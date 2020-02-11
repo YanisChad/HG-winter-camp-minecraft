@@ -1,0 +1,4 @@
+on connect:
+	wait 1 second
+	send title "&4Bienvenue &e%player% &4&l!" to player 
+	broadcast "&2&l%player% &b&la rejoint la partie !"
