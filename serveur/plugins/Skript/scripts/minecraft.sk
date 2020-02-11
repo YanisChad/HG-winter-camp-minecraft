@@ -10,25 +10,26 @@ on death of player:
 	set death message to "&c&l%victim% &9&la été tué par &c&l%attacker% !"
 	
 on command "gamestart":
+	wait 5 seconds
 	loop players:
 		send title "&e&l5"
-		send subtitle "&2A vos marques !"
 	wait 1 second
 	loop players:
 		send title "&e&l4"
 	wait 1 second
 	loop players:
 		send title "&6&l3"
-		send subtitle "&2Prêt !"
 	wait 1 second
 	loop players:
 		send title "&6&l2"
 	wait 1 second
 	loop players:
 		send title "&4&l1"
-		send subtitle "&2Partez !"
-	broadcast "Que le meilleur gagne !"
-	execute console command "/worldborder set 300 10"
+	wait 1 second
+	loop players:
+		send title "&b&lPartez !"
+	broadcast "&a&lQue le meilleur gagne !"
+	execute console command "/worldborder set 300 11"
 
 on command "gamestop":
 	loop players:
