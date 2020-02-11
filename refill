@@ -1,0 +1,23 @@
+command /refill:
+    permission: refill.refill
+    permission message: &cTu n'as pas la permission
+    trigger:
+        broadcast "&6[Refill] &aLes coffres ont été refill !"
+        loop blocks in radius 7 around {refill}:
+            if loop-block is a chest:
+                add 1 diamond to {_refill.list::*} 
+                add 1 diamond sword to {_refill.list::*}
+                add 64 tnt to {_refill.list::*}
+                add 1 flint and steel to {_refill.list::*}
+                set {_reffil1} to a random element out of {_refill.list::*}
+                set {_reffil2} to a random element out of {_refill.list::*}
+                set {_reffil3} to a random element out of {_refill.list::*}
+                add {_reffil1} to inventory of loop-block   
+                add {_reffil2} to inventory of loop-block   
+                add {_reffil3} to inventory of loop-block   
+command /refillset:
+    permission: refill.set
+    permission message: &cTu n'as pas la permission
+    trigger:
+        set {refill} to player's location
+        send "&6[Refill] &aLe centre du refill à été mis %{refill}%"
