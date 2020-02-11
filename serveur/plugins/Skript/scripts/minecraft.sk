@@ -3,8 +3,8 @@ on connect:
 	send title "&4Bienvenue &e%player% &4&l!" to player 
 	broadcast "&2&l%player% &b&la rejoint la partie !"
 	
-on leave:
-	broadcast "&2%lplayer% &b&la quitté la partie !"
+on quit:
+	broadcast "&2&l%player% &b&la quitté la partie !"
 	
 on death of player: 
 	set death message to "&c&l%victim% &9&la été tué par &c&l%attacker% !"
@@ -14,6 +14,7 @@ on command "gamestart":
 	execute console command "/worldborder set 300 10"
 
 on command "gamestop":
-	execute console command "/title @a title {"text":"Partie annulée","bold":true,"color":"red"}"
+	loop players:
+		send title "&c&lPartie annulée !" to loop-player
 	execute console command "/gamemode spectator @a"
 	execute console command "/worldborder set 50 5"
