@@ -1,17 +1,15 @@
 on connect:
-    wait 1 second
-    send title "&4Bienvenue &e%player% &4&l!" to player 
-    broadcast "&2&l%player% &b&la rejoint la partie !"
+	wait 1 second
+	send title "&4Bienvenue &e%player% &4&l!" to player 
+	broadcast "&2&l%player% &b&la rejoint la partie !"
 	
 on death of player: 
-    set death message to "&c&l%victim% &9&la été tué par &c&l%attacker% !"
+	set death message to "&c&l%victim% &9&la été tué par &c&l%attacker% !"
 	
 on command "gamestart":
-    broadcast "Que le meilleur gagne !"
-    wait 5 seconds
-    broadcast "Paramétrage des barrières à 300 blocks de distance"
-    execute console command "/worldborder set 300 10"
+	broadcast "Que le meilleur gagne !"
 
 on command "gamestop":
-    broadcast "Ok"
-    execute console command "/worldborder set 30 1"
+	send title "&c&lPartie annulée !"
+	execute console command "/gamemode spectator @a"
+	execute console command "/worldborder set 50 5"
