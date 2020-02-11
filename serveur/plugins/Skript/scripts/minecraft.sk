@@ -60,3 +60,51 @@ on break of stone:
 	else: 
 		send "Il te faut une pioche pour casser de la pierre ou des minerais !"
 		cancel event
+		
+on break of birch log:
+	if player has wooden axe or iron axe or golden axe or stone axe or diamond axe:
+	else:
+		send "Il te faut une hache pour casser du bois !" to player
+		cancel event
+
+on break of birch planks:
+	if player has wooden axe or iron axe or golden axe or stone axe or diamond axe:
+	else:
+		send "Il te faut une hache pour casser du bois !" to player
+		cancel event
+
+on break of spruce log:
+	if player has wooden axe or iron axe or golden axe or stone axe or diamond axe:
+	else:
+		send "Il te faut une hache pour casser du bois !" to player
+		cancel event
+
+on break of spruce planks:
+	if player has wooden axe or iron axe or golden axe or stone axe or diamond axe:
+	else:
+		send "Il te faut une hache pour casser du bois !" to player
+		cancel event
+
+on break of acacia log:
+	if player has wooden axe or iron axe or golden axe or stone axe or diamond axe:
+	else:
+		send "Il te faut une hache pour casser du bois !" to player
+		cancel event
+
+on break of acacia planks:
+	if player has wooden axe or iron axe or golden axe or stone axe or diamond axe:
+	else:
+		send "Il te faut une hache pour casser du bois !" to player
+		cancel event
+		
+on break of jungle log:
+	if player has wooden axe or iron axe or golden axe or stone axe or diamond axe:
+	else:
+		send "Il te faut une hache pour casser du bois !" to player
+		cancel event
+
+on break of jungle planks:
+	if player has wooden axe or iron axe or golden axe or stone axe or diamond axe:
+	else:
+		send "Il te faut une hache pour casser du bois !" to player
+		cancel event		
