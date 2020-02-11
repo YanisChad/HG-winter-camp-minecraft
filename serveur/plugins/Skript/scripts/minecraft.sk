@@ -3,6 +3,10 @@ on connect:
 	send title "&4Bienvenue &e%player% &4&l!" to player 
 	broadcast "&2&l%player% &b&la rejoint la partie !"
 	
+on leave:
+	wait 1 second
+	broadcast "&4%player% a quitté la partie !
+	
 on death of player: 
 	set death message to "&c&l%victim% &9&la été tué par &c&l%attacker% !"
 	
