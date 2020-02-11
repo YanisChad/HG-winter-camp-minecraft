@@ -1,4 +1,10 @@
 {
+  "minecraft:recipes/misc/charcoal": {
+    "criteria": {
+      "has_log": "2020-02-11 10:46:10 +0100"
+    },
+    "done": true
+  },
   "minecraft:recipes/transportation/dark_oak_boat": {
     "criteria": {
       "in_water": "2020-02-10 16:06:58 +0100"
@@ -65,6 +71,12 @@
     },
     "done": false
   },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_by_something": "2020-02-11 10:33:27 +0100"
+    },
+    "done": true
+  },
   "minecraft:recipes/transportation/jungle_boat": {
     "criteria": {
       "in_water": "2020-02-10 16:06:58 +0100"
@@ -110,6 +122,12 @@
   "minecraft:recipes/decorations/armor_stand": {
     "criteria": {
       "has_stone_slab": "2020-02-10 16:08:41 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_planks": {
+    "criteria": {
+      "has_log": "2020-02-11 10:46:10 +0100"
     },
     "done": true
   },

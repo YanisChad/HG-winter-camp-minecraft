@@ -33,12 +33,12 @@ settings:
     attackDamage:
       max: 2048.0
 messages:
+  unknown-command: Unknown command. Type "/help" for help.
   whitelist: Tu n'est pas sur la liste d'entrée
-  unknown-command: 
   server-full: Hrm hrm... Le serveur est plein
   outdated-client: Heuuu, mauvaise version {0}
   outdated-server: Peut-être utiliser la version {0} serait mieux...
-  restart: Le serveur redémarre 
+  restart: Le serveur redémarre
 commands:
   log: true
   tab-complete: 0
