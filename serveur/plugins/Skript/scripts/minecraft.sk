@@ -14,6 +14,6 @@ on command "gamestart":
 	execute console command "/worldborder set 300 10"
 
 on command "gamestop":
-	broadcast title "&c&lPartie annulée !"
+	send title "&c&lPartie annulée !" to all
 	execute console command "/gamemode spectator @a"
 	execute console command "/worldborder set 50 5"
