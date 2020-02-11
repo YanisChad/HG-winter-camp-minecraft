@@ -36,3 +36,18 @@ on command "gamestop":
 		send title "&c&lPartie annulée !" to loop-player
 	execute console command "/gamemode spectator @a"
 	execute console command "/worldborder set 50 5"
+
+on break of oak_wood:
+	if player has wooden_axe or iron_axe or golden_axe or stone_axe or diamond_axe:
+		execute command console "/help"
+	else:
+		send "Il te faut une hache pour casser du bois !" to player
+		cancel event
+
+
+on break of stone or gold_ore or ipon_ore or coal_ore:
+	if player has iron_pickaxe or wooden_pickaxe or stone_pickaxe or diamond_pickaxe or golden_pickaxe:
+		execute command console "/help"
+	else : 
+		send "Il te faut une pioche pour casser de la pierre ou des minerais !"
+		cancel event
