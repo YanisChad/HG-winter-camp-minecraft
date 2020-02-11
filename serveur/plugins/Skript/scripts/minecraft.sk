@@ -12,22 +12,22 @@ on death of player:
 on command "gamestart":
 	wait 5 seconds
 	loop players:
-		send title "&e&l5"
+		send title "&e&l5" to loop-player
 	wait 1 second
 	loop players:
-		send title "&e&l4"
+		send title "&e&l4" to loop-player
 	wait 1 second
 	loop players:
-		send title "&6&l3"
+		send title "&6&l3" to loop-player
 	wait 1 second
 	loop players:
-		send title "&6&l2"
+		send title "&6&l2" to loop-player
 	wait 1 second
 	loop players:
-		send title "&4&l1"
+		send title "&4&l1" to loop-player
 	wait 1 second
 	loop players:
-		send title "&b&lPartez !"
+		send title "&b&lPartez !" to loop-player
 	broadcast "&a&lQue le meilleur gagne !"
 	execute console command "/worldborder set 300 11"
 
@@ -36,18 +36,3 @@ on command "gamestop":
 		send title "&c&lPartie annulée !" to loop-player
 	execute console command "/gamemode spectator @a"
 	execute console command "/worldborder set 50 5"
-
-on break of oak_wood:
-	if player has wooden_axe or iron_axe or golden_axe or stone_axe or diamond_axe:
-		execute command console "/help"
-	else:
-		send "Il te faut une hache pour casser du bois !" to player
-		cancel event
-
-
-on break of stone or gold_ore or ipon_ore or coal_ore:
-	if player has iron_pickaxe or wooden_pickaxe or stone_pickaxe or diamond_pickaxe or golden_pickaxe:
-		execute command console "/help"
-	else : 
-		send "Il te faut une pioche pour casser de la pierre ou des minerais !"
-		cancel event
