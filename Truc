@@ -6,12 +6,12 @@ on connect:
 on death of player: 
     set death message to "%victim% a été tué par %attacker% !"
 
-on command "game start":
-    broadcast "Que le dernier gagne !"
+on command "gamestart":
+    broadcast "Que le meilleur gagne !"
     wait 5 seconds
     broadcast "Paramétrage des barrières à 300 blocks de distance"
     execute console command "/worldborder set 300 10"
 
-on command "game stop":
+on command "gamestop":
     broadcast "Ok"
     execute console command "/worldborder set 30 1"
