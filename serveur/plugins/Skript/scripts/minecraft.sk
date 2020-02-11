@@ -135,3 +135,6 @@ command /refillset:
 	trigger:
 		set {refill} to player's location
 		send "&6[Refill] &aLe centre du refill à été mis %{refill}%"
+
+command /vide:
+	clear all entities
