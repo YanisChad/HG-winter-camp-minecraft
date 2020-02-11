@@ -23,7 +23,7 @@ settings:
   log-villager-deaths: true
   timeout-time: 60
   restart-on-crash: true
-  restart-script: ./start.sh
+  restart-script: ./start.cmd
   netty-threads: 4
   attribute:
     maxHealth:
@@ -33,12 +33,12 @@ settings:
     attackDamage:
       max: 2048.0
 messages:
-  whitelist: You are not whitelisted on this server!
-  unknown-command: Unknown command. Type "/help" for help.
-  server-full: The server is full!
-  outdated-client: Outdated client! Please use {0}
-  outdated-server: Outdated server! I'm still on {0}
-  restart: Server is restarting
+  whitelist: Tu n'est pas sur la liste d'entrée
+  unknown-command: 
+  server-full: Hrm hrm... Le serveur est plein
+  outdated-client: Heuuu, mauvaise version {0}
+  outdated-server: Peut-être utiliser la version {0} serait mieux...
+  restart: Le serveur redémarre 
 commands:
   log: true
   tab-complete: 0
