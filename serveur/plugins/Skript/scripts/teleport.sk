@@ -61,10 +61,10 @@ command /tpps:
       if {loopnbr} is 5:
         teleport loop-player to location(574.5, 70.5 1676.5, world("world"), 0, 180)
       if {loopnbr} is 6:
-        teleport loop-player to location(544.5 70.5 1646.5, world("world"), 0, 180)
+        teleport loop-player to location(544.5, 70.5, 1646.5, world("world"), 0, 180)
       if {loopnbr} is 7:
-        teleport loop-player to location(573.5 70.5 1647.5, world("world"), 0, 180)
+        teleport loop-player to location(573.5, 70.5, 1647.5, world("world"), 0, 180)
       if {loopnbr} is 8:
-        teleport loop-player to location(544.5 70.5 1676.5, world("world"), 0, 180)
+        teleport loop-player to location(544.5, 70.5, 1676.5, world("world"), 0, 180)
       add 1 to {loopnbr}
     
