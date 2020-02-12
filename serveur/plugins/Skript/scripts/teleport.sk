@@ -50,21 +50,21 @@ command /tpps:
     
     set {loopnbr} to 1
     loop players:
-      else if {loopnbr} is 1:
+      if {loopnbr} is 1:
         teleport loop-player to location(580.5, 70, 1661.5, world("world"), 0, 180)
-      else if {loopnbr} is 2:
+      if {loopnbr} is 2:
         teleport loop-player to location(538.5, 70, 1661.5, world("world"), 0, 180)
-      else if {loopnbr} is 3:
+      if {loopnbr} is 3:
         teleport loop-player to location(559.5, 70, 1682.5, world("world"), 0, 180)
-      else if {loopnbr} is 4:
+      if {loopnbr} is 4:
         teleport loop-player to location(559.5, 70, 1640.5, world("world"), 0, 180)
-      else if {loopnbr} is 5:
+      if {loopnbr} is 5:
         teleport loop-player to location(574.5, 70.5 1676.5, world("world"), 0, 180)
-      else if {loopnbr} is 6:
+      if {loopnbr} is 6:
         teleport loop-player to location(544.5 70.5 1646.5, world("world"), 0, 180)
-      else if {loopnbr} is 7:
+      if {loopnbr} is 7:
         teleport loop-player to location(573.5 70.5 1647.5, world("world"), 0, 180)
-      else if {loopnbr} is 8:
+      if {loopnbr} is 8:
         teleport loop-player to location(544.5 70.5 1676.5, world("world"), 0, 180)
       add 1 to {loopnbr}
     
