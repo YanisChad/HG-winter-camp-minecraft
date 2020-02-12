@@ -1,4 +1,0 @@
-on player death:
-  wait 2 seconds
-  send "&c Vous êtes morts vous devenz spectateur :(" to player
-  execute console command "/gamemode spectator %player%"
