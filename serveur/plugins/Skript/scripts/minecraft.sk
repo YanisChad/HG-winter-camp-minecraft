@@ -13,10 +13,12 @@ on death of player:
 	
 on command "gamestart":
 	execute console command "/refill"
-	wait 20 seconds
+	wait 15 seconds
 	execute console command "/tpa"
 	execute console command "/clear @a"
 	execute console command "/advancement revoke @a everything"
+	wait 10 seconds
+	broadcast "&a&lPréparez vous !"
 	loop players:
 		send title "&e&l5" to loop-player
 	wait 1 second
@@ -1279,7 +1281,7 @@ command /refill:
 	permission: refill.refill
 	permission message: &cTu n'as pas la permission
 	trigger:
-		broadcast "&6[Refill] &aLes coffres ont été refill !"
+		broadcast "&6&l[Serveur] &a&lLa partie commence dans 20 secondes !"
 		loop blocks in radius 150 around {refill}:
 			if loop-block is a chest:
 				add 1 diamond to {_refill.list::*} 
@@ -1327,7 +1329,7 @@ command /refillset:
 	permission message: &cTu n'as pas la permission
 	trigger:
 		set {refill} to player's location
-		send "&6[Refill] &aLe centre du refill à été mis %{refill}%"
+		send "&6[Serveur] &aLe centre du refill à %{refill}%"
 
 on command "vide":
 	execute console command "/replaceitem block 513 70 1587 container.0 minecraft:air"
