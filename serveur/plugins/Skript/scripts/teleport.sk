@@ -1,13 +1,70 @@
-on command "tpps":
-  set {loopnbr} to 1
-  loop players:
-    if {loopnbr} is 1:
-      teleport %loop-player% to location(580, 70, 1661, world("world"), 0, 180
-    if {loopnbr} is 2:
-      teleport %loop-player% to location(538, 70, 1661, world("world"), 0, 180
-    if {loopnbr} is 3:
-      teleport %loop-player% to location(559, 70, 1682, world("world"), 0, 180
-    if {loopnbr} is 4:
-      teleport %loop-player% to location(559, 70, 1640, world("world"), 0, 180
-    add 1 to {loopnbr}
+command /tpps:
+  trigger:
+    execute console command "/setblock 580 72 1661 wool"
+    execute console command "/setblock 581 71 1661 wool"
+    execute console command "/setblock 579 71 1661 wool"
+    execute console command "/setblock 580 71 1662 wool"
+    execute console command "/setblock 580 71 1660 wool"
+    
+    execute console command "/setblock 538 72 1661 wool"
+    execute console command "/setblock 537 71 1661 wool"
+    execute console command "/setblock 539 71 1661 wool"
+    execute console command "/setblock 538 71 1660 wool"
+    execute console command "/setblock 538 71 1662 wool"
+    
+    execute console command "/setblock 559 72 1682 wool"
+    execute console command "/setblock 560 71 1682 wool"
+    execute console command "/setblock 558 71 1682 wool"
+    execute console command "/setblock 559 71 1681 wool"
+    execute console command "/setblock 559 71 1683 wool"
+    
+    execute console command "/setblock 559 72 1640 wool"
+    execute console command "/setblock 560 71 1640 wool"
+    execute console command "/setblock 558 71 1640 wool"
+    execute console command "/setblock 559 71 1641 wool"
+    execute console command "/setblock 559 71 1639 wool"
+    
+    execute console command "/setblock 574 72 1676 wool"
+    execute console command "/setblock 575 71 1676 wool"
+    execute console command "/setblock 573 71 1676 wool"
+    execute console command "/setblock 574 71 1675 wool"
+    execute console command "/setblock 574 71 1677 wool"
+    
+    execute console command "/setblock 544 72 1646 wool"
+    execute console command "/setblock 545 71 1646 wool"
+    execute console command "/setblock 543 71 1646 wool"
+    execute console command "/setblock 544 71 1645 wool"
+    execute console command "/setblock 544 71 1647 wool"
+    
+    execute console command "/setblock 573 72 1647 wool"
+    execute console command "/setblock 572 71 1647 wool"
+    execute console command "/setblock 574 71 1647 wool"
+    execute console command "/setblock 573 71 1646 wool"
+    execute console command "/setblock 573 71 1648 wool"
+    
+    execute console command "/setblock 544 72 1676 wool"
+    execute console command "/setblock 543 71 1676 wool"
+    execute console command "/setblock 545 71 1676 wool"
+    execute console command "/setblock 544 71 1677 wool"
+    execute console command "/setblock 544 71 1675 wool"
+    
+    set {loopnbr} to 1
+    loop players:
+      else if {loopnbr} is 1:
+        teleport loop-player to location(580.5, 70, 1661.5, world("world"), 0, 180)
+      else if {loopnbr} is 2:
+        teleport loop-player to location(538.5, 70, 1661.5, world("world"), 0, 180)
+      else if {loopnbr} is 3:
+        teleport loop-player to location(559.5, 70, 1682.5, world("world"), 0, 180)
+      else if {loopnbr} is 4:
+        teleport loop-player to location(559.5, 70, 1640.5, world("world"), 0, 180)
+      else if {loopnbr} is 5:
+        teleport loop-player to location(574.5, 70.5 1676.5, world("world"), 0, 180)
+      else if {loopnbr} is 6:
+        teleport loop-player to location(544.5 70.5 1646.5, world("world"), 0, 180)
+      else if {loopnbr} is 7:
+        teleport loop-player to location(573.5 70.5 1647.5, world("world"), 0, 180)
+      else if {loopnbr} is 8:
+        teleport loop-player to location(544.5 70.5 1676.5, world("world"), 0, 180)
+      add 1 to {loopnbr}
     
